@@ -23,7 +23,7 @@ jobs:
     needs: build
     strategy:
       matrix:
-        java: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+        java: [8, 9, 10, 11, 12, 13, 14, 15, 16]
     name: Integration Test MDK - Java ${{ matrix.java }}
     steps:
       - uses: actions/checkout@v2
@@ -44,7 +44,7 @@ jobs:
     needs: build
     strategy:
       matrix:
-        java: [8, 11, 17]
+        java: [8, 11]
     name: Integration Test Bukkit - Java ${{ matrix.java }}
     steps:
       - uses: actions/checkout@v2
