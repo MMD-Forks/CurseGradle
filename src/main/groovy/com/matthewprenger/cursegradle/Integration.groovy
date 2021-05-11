@@ -58,42 +58,42 @@ class Integration {
                         }
                         if (GradleVersion.current() >= GradleVersion.version('4.7.0')) {
                             log.info 'Gradle 4.7.0 or later detected, Supporting Java 11 and later...'
-                            if (JavaVersion.VERSION_1_11.compareTo(javaVersion) >= 0) {
+                            if (JavaVersion.VERSION_11.compareTo(javaVersion) >= 0) {
                                 curseProject.addGameVersion('Java 11')
                             }
                             if (GradleVersion.current() >= GradleVersion.version('5.0')) {
                                 log.info 'Gradle 5.0 or later detected, Supporting Java 12 and later...'
-                                if (JavaVersion.VERSION_1_12.compareTo(javaVersion) >= 0) {
+                                if (JavaVersion.VERSION_12.compareTo(javaVersion) >= 0) {
                                     curseProject.addGameVersion('Java 12')
                                 }
                                 if (GradleVersion.current() >= GradleVersion.version('6.0')) {
                                     log.info 'Gradle 6.0 or later detected, Supporting Java 11 and later...'
-                                    if (JavaVersion.VERSION_1_13.compareTo(javaVersion) >= 0) {
+                                    if (JavaVersion.VERSION_13.compareTo(javaVersion) >= 0) {
                                         curseProject.addGameVersion('Java 13')
                                     }
                                     if (GradleVersion.current() >= GradleVersion.version('6.3')) {
                                         log.info 'Gradle 6.3 or later detected, Supporting Java 14 and later...'
-                                        if (JavaVersion.VERSION_1_14.compareTo(javaVersion) >= 0) {
+                                        if (JavaVersion.VERSION_14.compareTo(javaVersion) >= 0) {
                                             curseProject.addGameVersion('Java 14')
                                         }
-                                        if (JavaVersion.VERSION_1_15.compareTo(javaVersion) >= 0) {
+                                        if (JavaVersion.VERSION_15.compareTo(javaVersion) >= 0) {
                                             curseProject.addGameVersion('Java 15')
                                         }
-                                        if (JavaVersion.VERSION_1_16.compareTo(javaVersion) >= 0) {
+                                        if (JavaVersion.VERSION_16.compareTo(javaVersion) >= 0) {
                                             curseProject.addGameVersion('Java 16')
                                         }
-                                        if (JavaVersion.VERSION_1_17.compareTo(javaVersion) >= 0) {
+                                        if (JavaVersion.VERSION_17.compareTo(javaVersion) >= 0) {
                                             curseProject.addGameVersion('Java 17')
                                         }
                                         if (GradleVersion.current() >= GradleVersion.version('7.0')) {
                                             log.info 'Gradle 7.0 or later detected, Supporting Java 18 and later...'
-                                            if (JavaVersion.VERSION_1_18.compareTo(javaVersion) >= 0) {
+                                            if (JavaVersion.VERSION_18.compareTo(javaVersion) >= 0) {
                                                 curseProject.addGameVersion('Java 18')
                                             }
-                                            if (JavaVersion.VERSION_1_19.compareTo(javaVersion) >= 0) {
+                                            if (JavaVersion.VERSION_19.compareTo(javaVersion) >= 0) {
                                                 curseProject.addGameVersion('Java 19')
                                             }
-                                            if (JavaVersion.VERSION_1_20.compareTo(javaVersion) >= 0) {
+                                            if (JavaVersion.VERSION_20.compareTo(javaVersion) >= 0) {
                                                 curseProject.addGameVersion('Java 20')
                                             }
                                         }
